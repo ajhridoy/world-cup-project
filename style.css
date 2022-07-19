@@ -1,0 +1,138 @@
+/* common code */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 80%; */
+
+}
+h1{
+    font-size: 60px;
+}
+h4{
+    font-size: 16px;
+}
+/* header start */
+header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.header-title p{
+    margin-bottom: 40px;
+}
+.half-width{
+    width: 50%;
+    margin-left: 20px;
+    padding: 20px;
+}
+.btn{
+    text-decoration: none;
+    background-color:#DD0000;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header-img img{
+    width: 400px;
+    height: 450px;
+    margin-top: 30px;
+}
+
+/* banner start  */
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+.banner{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 220px;
+    height: 250px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   margin-right: 20px;
+}
+.menu a{
+    text-decoration: none;
+    width: 150px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 1s;
+}
+.menu a:hover{
+    transform: scale(1.2);
+}
+.blog-item{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.blog{
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    transition: transform 1s;
+}
+.blog:hover{
+    transform: scale(1.1);
+}
+.blog img{
+    width: 100%;
+}
+.blog-desc{
+    padding: 10px;
+}
+.blog-desc a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.blog-desc span{
+    margin-right: 20px;
+}
+
+/* footer start */
+footer{
+    width: 100%;
+    margin-top: 30px;
+}
+.footer-desc{
+    text-align: center;
+    background-color:#161616;
+    color: whitesmoke;
+    padding: 50px;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid grey;
+    margin-left: 20px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.footer-icon a{
+    margin-left: 40px;
+    font-size: 30px;
+    color: brown;
+}
