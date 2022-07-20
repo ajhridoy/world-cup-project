@@ -103,38 +103,28 @@ main{
 .blog:hover{
     transform: scale(1.1);
 }
+.blog-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 .blog img{
     width: 100%;
+    padding: 20px;
 }
 .blog-desc{
-    padding: 10px;
-}
-.blog-desc a{
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-.blog-desc h4{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.blog-desc span{
-    margin-right: 20px;
-}
-.view-btn{
-    display: none;
+    padding: 20px;
     text-align: center;
-    margin-top: 30px;
 }
-.view-btn a{
-    text-decoration: none;
-    background-color: #DD0000;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+
+.blog-desc h3{
+    margin-top: 20px;
 }
+.blog-desc p{
+    font-size: 14px;
+}
+
 /* banner end */
 
 /* footer start */
@@ -212,13 +202,7 @@ footer{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
-    .hidden-blog{
-        display: none;
-    }
-    .view-btn{
-        display: block;
-    }
-
+    
     .footer-menu{
         flex-wrap: wrap;
     }
