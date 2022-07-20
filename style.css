@@ -1,10 +1,11 @@
 /* common code */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    /* width: 80%; */
-
 }
 h1{
     font-size: 60px;
@@ -13,11 +14,12 @@ h4{
     font-size: 16px;
 }
 /* header start */
-header{
+.header{
     width: 80%;
     margin: 0 auto;
     display: flex;
     background-color: black;
+    align-items: center;
     color: white;
     padding: 20px;
     margin-top: 30px;
@@ -31,6 +33,10 @@ header{
     margin-left: 20px;
     padding: 20px;
 }
+.header-img img{
+    width: 100%;
+    height: 80%;
+}
 .btn{
     text-decoration: none;
     background-color:#DD0000;
@@ -40,8 +46,7 @@ header{
 }
 
 .header-img img{
-    width: 400px;
-    height: 450px;
+   width: 90%;
     margin-top: 30px;
 }
 
@@ -68,11 +73,11 @@ main{
 }
 .menu a{
     text-decoration: none;
-    width: 150px;
+    width: 180px;
     background-color: white;
     color: black;
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     border-radius: 5px;
     transition: transform 1s;
@@ -108,10 +113,25 @@ main{
     border-radius: 5px;
     padding: 5px 10px;
 }
+.blog-desc h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .blog-desc span{
     margin-right: 20px;
 }
-
+.view-btn{
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
+.view-btn a{
+    text-decoration: none;
+    background-color: #DD0000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 /* footer start */
 footer{
     width: 100%;
@@ -131,8 +151,109 @@ footer{
     margin-top: 60px;
     margin-bottom: 40px;
 }
+.footer-menu p{
+    margin-top: 20px;
+}
 .footer-icon a{
     margin-left: 40px;
     font-size: 30px;
     color: brown;
+}
+
+/* media query */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header{
+        width: 90%;
+        padding: 10px;
+    }
+    .half-width{
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .header-title{
+        width: 90%;
+    }
+    .header-title p{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 40px;
+    } 
+
+    main{
+        width: 90%;
+    }
+
+
+    .banner{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: row;
+        background-color: white;
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        justify-content: space-between;
+    }
+    .menu a{
+        border: 1px solid black;
+    }
+    .blog-item{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hidden-blog{
+        display: none;
+    }
+    .view-btn{
+        display: block;
+    }
+
+    .footer-menu{
+        flex-wrap: wrap;
+    }
+    .footer-menu p{
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .header{
+        width: 80%;
+        flex-direction: column;
+    }
+    .half-width{
+        width: 100%;
+        text-align: center;
+    }
+    .header-title p{
+        font-size: 14px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        justify-content: space-between;
+    }
+    .menu a{
+        border: 1px solid black;
+    }
+    .blog-item{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-menu{
+        flex-direction: column;
+        margin-top: 30px;
+    }
 }
