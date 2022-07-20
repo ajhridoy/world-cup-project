@@ -202,7 +202,7 @@ footer{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .footer-menu{
         flex-wrap: wrap;
     }
@@ -226,7 +226,7 @@ footer{
         text-align: center;
     }
     .header-title p{
-        font-size: 14px;
+        font-size: 12px;
     }
     .banner{
         flex-direction: column;
